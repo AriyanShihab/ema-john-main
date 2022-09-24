@@ -1,0 +1,26 @@
+.product-card {
+  padding: 10px;
+  border: 2px solid lightgray;
+  height: 460px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.product-card img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.cartButton {
+  border: none;
+  width: 100%;
+  background: #0c1726;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bolder;
+  padding: 8px 12px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 6px 6px;
+}

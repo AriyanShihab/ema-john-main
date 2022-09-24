@@ -1,0 +1,36 @@
+.headerNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #170535;
+  height: 70px;
+  padding: 0 10vw;
+}
+
+.text-logo {
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #33ddff;
+
+  margin: 10px;
+  display: inline-block;
+}
+.text-logo span {
+  padding: 7px;
+  border-radius: 5px;
+  background: #33ddff;
+  color: #170535;
+}
+
+.menu a {
+  color: #33ddff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+.menu a:hover {
+  color: #e6fbff;
+}
