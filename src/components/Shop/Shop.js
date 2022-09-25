@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
-import "./Shop.css";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -12,15 +12,14 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-
-  const handelAddToCart = (product) => {
-    const newCart = [...cart, product];
-    setCart(newCart);
+  const handelAddToCart = (productDetails) => {
+    // const newCart = [...cart, productDetails];
+    setCart([...cart, productDetails]);
   };
 
   return (
-    <div className="shop-grid">
-      <div className="product-grid">
+    <div className=" grid w-4/5 mx-auto p-6 grid-cols-5 gap-4 ">
+      <div className=" col-span-4 product-container bg-gray-700 grid grid-cols-3 gap-4 p-4 rounded-md ">
         {products.map((product) => (
           <Product
             key={product.id}
@@ -29,9 +28,8 @@ const Shop = () => {
           ></Product>
         ))}
       </div>
-      <div>
-        <h2>Order Summery</h2>
-        <p>selected items:{cart.length}</p>
+      <div className=" col-span-1 cart-summery-container bg-yellow-200 rounded-md p-3">
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );

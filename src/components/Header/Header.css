@@ -16,12 +16,6 @@
   margin: 10px;
   display: inline-block;
 }
-.text-logo span {
-  padding: 7px;
-  border-radius: 5px;
-  background: #33ddff;
-  color: #170535;
-}
 
 .menu a {
   color: #33ddff;
